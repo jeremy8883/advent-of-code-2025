@@ -11,6 +11,7 @@ target="day${day}"
 exe="build/${target}"
 input="day${day}/input.txt"
 
+cmake -S . -B build
 cmake --build build --target "$target"
 
 "$exe" < "$input"
