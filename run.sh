@@ -13,8 +13,4 @@ input="day${day}/input.txt"
 
 cmake --build build --target "$target"
 
-if [ -f "$input" ]; then
-  "$exe" < "$input"
-else
-  "$exe"
-fi
+"$exe" < "$input"
