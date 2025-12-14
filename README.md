@@ -9,3 +9,9 @@ sh run.sh <day>
 ```
 
 eg `sh run.sh 1` to run day 1's solution.
+
+To test:
+
+```bash
+sh test.sh <day>
+```

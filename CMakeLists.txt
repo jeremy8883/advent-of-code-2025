@@ -5,4 +5,14 @@ set(CMAKE_C_STANDARD 17)
 
 add_executable(day01 day01/main.c)
 
-add_executable(day02 day02/main.c)
+add_executable(day02 day02/main.c
+    day02/day02.c
+)
+
+add_library(unity external/unity/src/unity.c)
+target_include_directories(unity PUBLIC external/unity/src)
+
+add_executable(day02_test day02/day02_test.c
+    day02/day02.c
+)
+target_link_libraries(day02_test unity)
