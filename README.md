@@ -15,3 +15,9 @@ To test:
 ```bash
 sh test.sh <day>
 ```
+
+Add boilerplate:
+
+```bashsh
+sh new.sh <day>
+```
