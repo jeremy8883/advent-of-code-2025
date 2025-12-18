@@ -17,9 +17,9 @@ void test_part1(void) {
     char **lines = read_input(f, &count);
     fclose(f);
 
-    char* result = part1(lines, count);
+    long result = part1(lines, count);
 
-    TEST_ASSERT_EQUAL_STRING("357", result);
+    TEST_ASSERT_EQUAL(357, result);
 }
 
 void test_part2(void) {
@@ -31,9 +31,9 @@ void test_part2(void) {
     char **lines = read_input(f, &count);
     fclose(f);
 
-    char* result = part2(lines, count);
+    long result = part2(lines, count);
 
-    TEST_ASSERT_EQUAL_STRING("0", result);
+    TEST_ASSERT_EQUAL(0, result);
 }
 
 int main(void) {
