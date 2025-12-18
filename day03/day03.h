@@ -4,6 +4,7 @@
 
 char **read_input(FILE *f, size_t *count);
 long part1(char **ranges, size_t count);
-long part2(char **ranges, size_t count);
+
+long unsigned part2(char **ranges, size_t count);
 
 #endif //ADVENT_OF_CODE_2025_MAIN_H
